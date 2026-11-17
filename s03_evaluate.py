@@ -8,6 +8,12 @@ Rule     nearest-waveguide rule + fine search            (no ML)
 Stage 5  ML-chosen placement + fine search               (proposed)
 Stage 5+ Stage 5 followed by ZF-AO sweeps (warm start)
 """
+import os
+# One numerical thread per worker process. The layouts are already spread over
+# all processor cores, so letting every worker start its own thread pool for the
+# model prediction makes the processes compete and inflates the measured time.
+for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS"):
+    os.environ.setdefault(_v, "1")
 import time
 import numpy as np
 import joblib

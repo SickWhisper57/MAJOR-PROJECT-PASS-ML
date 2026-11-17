@@ -1,10 +1,10 @@
 Test drops: 200 | SINR target 10 dB | power = mean of dBm values
 scheme                               mean dBm  median   evals  time ms
 Stage 2  random + ZF                    15.89   15.43       0      0.0
-Stage 3  ZF-AO (random start)           -2.36   -3.12   14051    121.3
-Stage 4  ZF-AO (smart start)            -2.40   -3.06   13600    112.8
-Rule     nearest waveguide + fine        0.27   -1.23     521      9.7
-Stage 5  ML + fine search               -1.32   -2.37    1522    553.7
-Stage 5+ ML + 2 ZF-AO sweeps            -2.24   -3.15    4325    588.3
+Stage 3  ZF-AO (random start)           -2.36   -3.12   14051    146.4
+Stage 4  ZF-AO (smart start)            -2.40   -3.06   13600    143.3
+Rule     nearest waveguide + fine        0.27   -1.23     521     13.6
+Stage 5  ML + fine search               -1.32   -2.37    1522     59.7
+Stage 5+ ML + 2 ZF-AO sweeps            -2.24   -3.15    4325     84.3
 Stage 1 (random + MF) mean per-user SINR: 2.42 dB
 Stage 5 per-user SINR min/max: 10.000 / 10.000 dB
